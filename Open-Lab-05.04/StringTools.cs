@@ -6,7 +6,7 @@ namespace Open_Lab_05._04
     {
         public string RemoveSpecialCharacters(string original)
         {
-            throw new NotImplementedException();
+            return System.Text.RegularExpressions.Regex.Replace(original, "[^a-zA-Z0-9_.]+", "", System.Text.RegularExpressions.RegexOptions.Compiled);
         }
     }
 }
